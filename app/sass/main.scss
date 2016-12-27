@@ -1,63 +1,239 @@
 /* ============================ Main styles ============================ */
 
-$main-color: #004a80;
-$accent-color: #69A93D;
+$main-color: #0f85da;
+$accent-color: #FFC400;
 $white: #fff;
 $black: #000;
-
 ::selection {
-  background: rgba(#fff000, .5);
+    background: rgba(#fff000, .3);
+}
+
+body {
+    background: #fbfbfb;
 }
 
 .flex {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .align-right {
-  text-align: right;
+    text-align: right;
 }
 
 .align-left {
-  text-align: left;
+    text-align: left;
 }
 
 .align-center {
-  text-align: center;
+    text-align: center;
 }
 
 img.alignleft {
-  float: left;
-  margin: 20px;
-  margin-left: 0;
+    float: left;
+    margin: 20px;
+    margin-left: 0;
 }
 
 img.alignright {
-  float: right;
-  margin: 20px;
-  margin-right: 0;
+    float: right;
+    margin: 20px;
+    margin-right: 0;
 }
 
 img.aligncenter {
-  display: block;
-  margin: 20px auto;
+    display: block;
+    margin: 20px auto;
 }
 
 img.alignnone {
-  display: block;
-  margin: 20px;
+    display: block;
+    margin: 20px;
 }
 
 input,
 .btn {
-  &:focus,
-  &:active {
-    outline: none;
-  }
+    &:focus,
+    &:active {
+        outline: none;
+    }
 }
 
-/* ============================ Tamplate styles ============================ */
 
+/* ============================ top-header ============================ */
+
+.top-header {
+    background: $main-color;
+    color: $white;
+    padding: 5px 15px;
+    input {
+        padding: 3px 10px;
+        border-radius: 3px 0 0 3px;
+        border: 1px solid darken($white, 7%);
+        font-size: 14px;
+        color: $main-color;
+    }
+    button {
+        margin-left: -4px;
+        border: 1px solid darken($white, 7%);
+        font-size: 14px;
+        padding: 3px 7px;
+        border-radius: 0 3px 3px 0;
+        border-left: none;
+        background: $white;
+        i {
+            color: $main-color;
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+            display: inline-block;
+            padding-right: 5px;
+            a {
+                color: $white;
+            }
+        }
+    }
+    p {
+        margin: 0;
+    }
+}
+
+
+/* ============================ header ============================ */
+
+header {
+    background: darken($white, 7%);
+    padding: 15px 15px;
+    h1 {
+        margin: 0;
+        text-align: center;
+    }
+    .slogan {
+        text-align: center;
+        margin: 0;
+    }
+    .phone,
+    .mail {
+        i {
+            color: $main-color;
+            margin-right: 7px;
+        }
+    }
+    button {
+        border: none;
+        background: $main-color;
+        color: $white;
+        padding: 7px 25px;
+        border-radius: 7px;
+    }
+}
+
+
+/* ============================ nav ============================ */
+
+nav {
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {
+            list-style: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            border-left: 1px solid darken($white, 10%);
+            border-right: 1px solid $white;
+            &:last-child {
+                border-right: 1px solid darken($white, 10%);
+            }
+            a {
+                padding: 10px 0;
+                display: block;
+                text-transform: uppercase;
+                background: linear-gradient(180deg, $white, darken($white, 10%));
+                color: $black;
+                position: relative;
+                &:hover {
+                    text-decoration: none;
+                    background: $white;
+                    color: $black;
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        let: 0;
+                        width: 100%;
+                        height: 3px;
+                        background: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ============================ top-slider ============================ */
+
+.top-slider {
+    background: darken($white, 15%);
+    .owl-wrapper {
+        height: 300px;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        h2,
+        h3 {
+            width: 100%;
+            text-align: center;
+        }
+        .more {
+            display: block;
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 5px;
+            padding: 7px 25px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.home-items {
+    .h3 {
+        background: $main-color;
+        color: $white;
+        padding: 5px 15px;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 3px solid $accent-color;
+        margin-bottom: 0;
+    }
+    .more {
+        margin-top: 15px;
+        display: inline-block;
+    }
+    .wrapper {
+        padding: 15px;
+        border: 1px solid darken($white, 10%);
+        border-top: none;
+        border-radius: 0 0 5px 5px;
+    }
+    .about {
+        margin-top: 20px;
+    }
+    .about-wrapper {
+        padding: 15px;
+        border: 1px solid darken($white, 10%);
+        border-radius: 5px;
+        h3 {
+            margin-top: 0;
+        }
+    }
+}
 
 
 /* ============================ Fonts ============================ */

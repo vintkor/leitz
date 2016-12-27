@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Fira Code",
+    "editor.tabSize": 4,
+    "editor.wrappingColumn": 0,
+    "editor.lineHeight": 30,
+    "php.validate.executablePath": "/usr/bin/php",
+    "editor.selectionHighlight": false,
+    "editor.renderLineHighlight": "none",
+    "terminal.integrated.fontLigatures": true,
+    "color-highlight.markerType": "underline"
+}
