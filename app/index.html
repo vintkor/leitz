@@ -38,7 +38,7 @@
                 <div class="col-md-2">
                     <ul>
                         <li><a href="#">Укр</a></li>
-                        <li><a href="#">Рус</a></li>
+                        <li class="active"><a href="#">Рус</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
@@ -56,11 +56,11 @@
         <header>
             <div class="row flex">
                 <div class="col-md-2">
-                    <img src="//placehold.it/350x200" alt="" class="img-responsive">
+                    <img src="img/logo.png" alt="" class="img-responsive logo">
                     <p class="slogan">Просто краще</p>
                 </div>
                 <div class="col-md-7">
-                    <h1>Leitz iтструменти україна</h1>
+                    <h1>ЛЕЙТЦ ІНСТРУМЕНТИ УКРАЇНА</h1>
                 </div>
                 <div class="col-md-3">
                     <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i> 0 800 123 123</p>
@@ -75,7 +75,16 @@
                 <div class="col-md-12">
                     <ul>
                         <li><a href="#">SomeItem2</a></li>
-                        <li><a href="#">SomeItem3</a></li>
+                        <li><a href="#">SomeItem3</a>
+                            <ul>
+                                <li><a href="#">childItem-1</a></li>
+                                <li><a href="#">childItem-2 childItem</a></li>
+                                <li><a href="#">childItem-3</a></li>
+                                <li><a href="#">Обработка плоских поверхностей</a></li>
+                                <li><a href="#">childItem-4</a></li>
+                                <li><a href="#">childItem-5</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">SomeItem4</a></li>
                         <li><a href="#">SomeItem5</a></li>
                         <li><a href="#">SomeItem6</a></li>
@@ -86,10 +95,10 @@
         </nav>
 
         <section class="top-slider">
-            <div class="owl-carousel">
-                <div class="owl-wrapper flex">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, eum rem fugit eveniet, ab suscipit.</h3>
+            <div class="owl-carousel owl-slider">
+                <div class="owl-wrapper flex" style="background-image: url(img/slide-1.png)">
+                    <h2>ЛЕЙТЦ ІНСТРУМЕНТИ УКРАЇНА</h2>
+                    <p>демо текст слайдера демо текст слайдера демо текст слайдера</p>
                     <a class="more" href="#">Подробнее</a>
                 </div>
             </div>
@@ -98,17 +107,49 @@
         <div class="row home-items">
             <div class="col-md-4 news">
                 <h3 class="h3">Новости компании</h3>
+                <div class="owl-carousel owl-news">
+                    <div class="wrapper">
+                        <div class="row news--single">
+                            <div class="col-md-4">
+                                <img src="img/news-1.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="news--title">Пятница, 02 декабря 2016, 16:42</p>
+                                <hr class="news--hr">
+                                <p class="news--content">На выставке Holz-Handwerk 2016 компания Leitz  представляет среди других инструментов... </p>
+                                <a href="#" class="news--more pull-right">Подробнее...</a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr class="news--hr">
+                            <div class="col-md-4">
+                                <img src="img/news-1.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="news--title">Пятница, 02 декабря 2016, 16:42</p>
+                                <hr class="news--hr">
+                                <p class="news--content">На выставке Holz-Handwerk 2016 компания Leitz  представляет среди других инструментов... </p>
+                                <a href="#" class="news--more pull-right">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4 products">
                 <h3 class="h3">Продукция</h3>
                 <div class="wrapper">
-                    <img src="//placehold.it/360x270" alt="" class="img-responsive">
+                    <span href="#" class="shadow">
+                        <img src="img/product.png" alt="" class="img-responsive">
+                        <div class="after"><a href="#">Информация о категории</a></div>
+                    </span>
                 </div>
             </div>
             <div class="col-md-4 services">
                 <h3 class="h3">Сервис</h3>
                 <div class="wrapper">
-                    <img src="//placehold.it/360x270" alt="" class="img-responsive">
+                    <span href="#" class="shadow">
+                        <img src="img/service.png" alt="" class="img-responsive">
+                        <div class="after"><a href="#">Информация о категории</a></div>
+                    </span>
                 </div>
             </div>
         </div>
@@ -117,30 +158,38 @@
             <div class="col-md-4 online align-center">
                 <h3 class="h3">Онлайн-Лексикон Leitz</h3>
                 <div class="wrapper">
-                    <img src="//placehold.it/360x270" alt="" class="img-responsive">
-                    <a class="more" href="#">Далее к Онлайн-Лексикону</a>
+                    <img src="img/online.png" alt="" class="img">
+                    <a class="more" href="#">далее к Онлайн-Лексикону</a>
                 </div>
             </div>
             <div class="col-md-8 about">
                 <div class="about-wrapper">
-                    <h3>Leitz инструменты Украина</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae similique quidem delectus aut neque iste iusto sequi maiores cumque beatae quia amet eius sint, sapiente optio facilis ut aliquam non ab a quod tenetur impedit! Fuga
+                    <h3 class="about--h3">Leitz инструменты Украина</h3>
+                    <p class="about--p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae similique quidem delectus aut neque iste iusto sequi maiores cumque beatae quia amet eius sint, sapiente optio facilis ut aliquam non ab a quod tenetur impedit! Fuga
                         sapiente sed perspiciatis neque quasi corporis voluptates facilis nemo delectus, illum excepturi consequuntur similique, saepe perferendis, repudiandae itaque repellendus. Inventore dolore, magnam hic, et sequi temporibus id facilis
                         velit non ullam quia eos voluptates in natus nesciunt officia voluptas. Voluptatem explicabo, illum ipsam est provident. Voluptatum quo excepturi quos tenetur, quis perspiciatis provident consequuntur blanditiis repudiandae fuga,
-                        omnis. Suscipit consectetur saepe debitis atque eligendi facere, rerum perspiciatis impedit omnis culpa quam accusantium cum accusamus velit hic ex vitae consequuntur distinctio maxime ad eius voluptatum repellat dignissimos! Tempore
-                        aut, ad eos fuga, adipisci error obcaecati libero repellat at, repudiandae possimus consectetur laborum quas a vitae deleniti rerum nostrum fugiat omnis nulla, quam rem dolor earum.</p>
+                        omnis.</p>
                 </div>
             </div>
         </div>
 
-        <footer>
+        <footer class="footer">
             <div class="row">
                 <div class="col-md-4 align-center">
-                    <img src="//placehold.it/100x100" alt="">
-                    <p>ТОВ "Leitz iтструменти україна"</p>
+                    <img src="img/logo.png" alt="" class="footer--logo">
+                    <p class="footer--slogan">ТОВ "Leitz iтструменти україна"</p>
                 </div>
-                <div class="col-md-4 align-center"></div>
-                <div class="col-md-4 align-center"></div>
+                <div class="col-md-4 align-center footer--center">
+                    <h3>Наши координаты:</h3>
+                    <p>08130 Київська обл.,</p>
+                    <p>с. Петропалівська Борщагівка,</p>
+                    <p>вул. Леніна, 2Б</p>
+                </div>
+                <div class="col-md-4 align-center">
+                    <p class="footer--phone"><i class="fa fa-phone" aria-hidden="true"></i> 0 800 123 123</p>
+                    <p class="footer--mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> www-info@leitz.com.ua</p>
+                    <button class="footer--button">Оставить заявку</button>
+                </div>
             </div>
         </footer>
 
